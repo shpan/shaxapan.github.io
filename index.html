@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="dist/css/swiper.css">
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+	#ebta{
+	background:url(bg.jpg) center center no-repeat scroll;
+	background-size:cover;
+	}
+	#ebta a{
+	color:#fafafa;
+	text-decoration:none;
+	padding:20px 35px;
+	border:1px solid #fafafa;
+			transition:0.5s ease;}
+		#ebta a:hover{
+		background:rgba(0,0,0,0.25);
+		transition:0.5s ease;}
+	.tepa{
+	background-color:rgba(0,0,0,0.6);
+	width:100%;
+	height:47px;
+	position:fixed;
+	z-index:9999;}
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+<div class="swiper-container">
+    <!-- Parallax background element -->
+    <div 
+        class="parallax-bg" 
+        style="background-image:url(http://lorempixel.com/900/600/nightlife/2/)" 
+        data-swiper-parallax="-23%">
+    </div>
+    <div class="swiper-wrapper">
+		        <div class="swiper-slide" id="ebta">
+
+            <div class="subtitle" data-swiper-parallax="-200"><a href="#">Купить смартфон</a></div>
+            </div>
+
+		        <div class="swiper-slide" id="ebta">
+
+            <div class="subtitle" data-swiper-parallax="-200"><a href="#">Купить повербэнки</a></div>
+
+
+            </div>
+
+		        <div class="swiper-slide" id="ebta">
+
+            <div class="subtitle" data-swiper-parallax="-200"><a href="#">Купить колонки</a></div>
+
+            </div>
+        </div>
+			        <div class="swiper-pagination"></div>
+    </div>
+
+</div>
+
+<div class="content">
+bla bla bla<br />bla bla bla<br />bla bla bla<br />bla bla bla<br />bla bla bla<br />bla bla bla<br />
+</div>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="dist/js/swiper.jquery.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+		autoplay : 3000,
+		speed : 1500,
+		parallax : true,
+		autoplayDisableOnInteraction : false,
+    });
+    </script>
+</body>
+</html>
