@@ -1,0 +1,24 @@
+.item {
+  font-weight: bold;
+  padding: 3em;
+  height: 200px;
+  border: thin solid white;
+}
+
+.cloud-security {
+  background: blue;
+  color: white;
+}
+
+.hybrid-security {
+  background: red;
+}
+
+.on-prem-security {
+  background: black;
+  color: white;
+}
+
+.aws-security {
+  background: orange;
+}
