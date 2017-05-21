@@ -2,12 +2,12 @@
 $.noConflict();
 jQuery(document).ready(function($) {
     // initial
-    $('#content').load('http://www.applestore.uz');
+    $('#content').load('');
 
 	// menu clicked
 	$('ul#nav li a').click(function() {
 	    var page = $(this).attr('href');
-        $('#content').load('/' + page + '.html');
+        $('#content').load('http://www.applestore.uz/' + page + '.html');
 	return false;
 	alert(page);
 	})
