@@ -2,7 +2,7 @@
 $.noConflict();
 jQuery(document).ready(function($) {
     // initial
-    $('#content').load('');
+    $('#content').load('http://www.applestore.uz');
 
 	// menu clicked
 	$('ul#nav li a').click(function() {
