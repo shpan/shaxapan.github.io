@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 	// menu clicked
 	$('ul#nav li a').click(function() {
 	    var page = $(this).attr('href');
-        $('#content').load('applestore.uz/' + page + '.html');
+        $('#content').load('/' + page + '.html');
 	return false;
 	alert(page);
 	})
