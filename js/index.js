@@ -14,12 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 function navigate( url, addToHistory ){
-  //call ajax function to load the proper content for our url
-  //potentially use ajax to load the url itself, if it were an html page
-  //add handler for the ajax response
-  output = document.querySelector("#output");
-  output.innerHTML = "Let's pretend that we just did an AJAX call for <strong>" + url + "</strong>.<br/> We will also change the url in the location bar to make it look official.";
-  
+
   if( addToHistory ){
     history.pushState({"data":123}, null, url );  
     //add the url to the history array
