@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mistore uz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../css/swiper.css">
+	<script async src="../js/js1.js"></script>
+</head>
+<body>
+<div class="header">
+<a href="http://mistore.uz"><img src="../img/logo-bg.png" id="logo-bg-max"></a>
+	<div class="full">
+		<nav class="km-ui-text-underline">  
+			<a href="/" class="pageLink">Home</a>     
+			<a href="http://shax.uz/products" class="pageLink">Products</a>  
+			<a href="http://shax.uz/delivery" class="pageLink">Delivery</a>  
+			<a href="http://shax.uz/contacts" class="pageLink">Contacts</a>  
+			<a href="http://shax.uz/about" class="pageLink active">About</a>
+		</nav>
+	</div>
+	<div class="mobile">
+		<input type="checkbox" name="toggle" id="toggle" />
+			<label for="toggle">
+				<div class="hamburger" id="hamburger-1">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</div>
+					</label>		<div class="logo">
+			<a href="http://mistore.uz">
+				<img src="img/logo-bg.png" id="logo-bg">
+			</a>
+		</div>
+	<div class="message">
+		<ul>
+			<li><a href="/" class="active">Home</a></li>   
+			<li><a href="products">Products</a></li>
+			<li><a href="delivery">Delivery</a></li> 
+			<li><a href="contacts">Contacts</a></li> 
+			<li><a href="about">About</a></li>
+		</ul>
+	</div>
+
+	</div>
+		
+</div>
+<div id="container">
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide" id="swiper-content1">
+			<a href="#">Купить смартфон</a>
+		</div>
+		
+		<div class="swiper-slide" id="swiper-content2">
+			<a href="#">Купить повербэнки</a>
+		</div>
+
+		<div class="swiper-slide" id="swiper-content3">
+			<a href="#">Купить наушники</a>
+		</div>
+	</div>
+			<div class="swiper-pagination"></div>
+</div>
+
+<div class='main' id='two'></div>
+<div class='main' id='three'></div>
+<div class='main' id='four'></div>
+<div id='five'></div>
+</div>
+<div class="footer">
+	<div id="footer-text">
+		2017 © Mi Store Uz<br />
+		Интернет-магазин Оригинальной продукции Xiaomi
+</div>
+	<div id="footer-logo">
+		<a href="http://mistore.uz"> 
+			Всегда рядом <img style="vertical-align:middle; border-radius:3px;" src="../img/logo-mini.png"></a>
+	</div>
+</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="../js/swiper.jquery.js"></script>
+    <script>
+		  $('document').ready(function() {
+    $('.header a').click(function(e) {
+        e.preventDefault();
+        $('.header a').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+		$(window).on('resize',function(){
+	$(".active").trigger('mouseenter');});
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+		autoplay : 3000,
+		speed : 1000,
+		autoplayDisableOnInteraction : false,
+    });
+    </script>
+</body>
+</html>
